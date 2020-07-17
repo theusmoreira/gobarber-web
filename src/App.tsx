@@ -4,7 +4,7 @@ import SignIn from './pages/SignIn';
 // import SignUp from './pages/SignUp';
 
 import ToastContainer from './components/ToastContainer';
-import { AuthProvider } from './hooks/AuthContext';
+import { AuthProvider } from './hooks/Auth';
 
 const App: React.FC = () => (
   <>
