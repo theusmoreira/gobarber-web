@@ -57,4 +57,16 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - [Node.js](https://nodejs.org/en/)
 - [TypeScript](https://www.typescriptlang.org/)
 
+### Autor
+---
 
+<a href="https://www.linkedin.com/in/matheus-santos-moreira">
+ <img style="border-radius: 50%;" src="https://avatars0.githubusercontent.com/u/52337444?s=460&u=98daaab916965e0330ef6552c0e879eb75e51bb1&v=4" width="100px;" alt=""/>
+ <br />
+ <sub><b>Matheus Santos</b></sub></a> <a href="https://www.linkedin.com/in/matheus-santos-moreira" title="Rocketseat">🚀</a>
+
+
+Feito com ❤️ por Matheus Santos 👋🏽 Entre em contato!
+
+ [![Linkedin Badge](https://img.shields.io/badge/-Matheus-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/matheus-santos-moreira)](https://www.linkedin.com/in/matheus-santos-moreira)
+[![Gmail Badge](https://img.shields.io/badge/-contato@matheussantosdev.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:contato@matheussantosdev.com)](mailto:contato@matheussantosdev.com)
