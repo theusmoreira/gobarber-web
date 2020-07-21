@@ -4,7 +4,7 @@
 
 <img src="./.github/login.png"/>
 
-<strong align="center">Um aplicativo de agendamento de barbeiro que mostra ao barbeiro sua agenda para o dia.</strong>
+<p align="center"><strong>Um aplicativo de agendamento de barbeiro que mostra ao barbeiro sua agenda para o dia.</strong></p>
 
 
 <h4 align="center">
