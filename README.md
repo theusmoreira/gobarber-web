@@ -2,6 +2,7 @@
 <img src="./.github/logo.svg"/>
 </h1>
 
+<img src="./.github/login.png"/>
 
 <strong align="center">Um aplicativo de agendamento de barbeiro que mostra ao barbeiro sua agenda para o dia.</strong>
 
@@ -13,13 +14,11 @@
 Tabela de conteúdos
 =================
 <!--ts-->
-   * [Sobre](#Sobre)
    * [Tabela de Conteudo](#tabela-de-conteudo)
    * [Pré Requisitos](#pre-requisitos)
    * [Tecnologias](#tecnologias)
 <!--te-->
 
-<img src="./.github/login.png"/>
 
 <img src="./.github/gobarber.gif"/>
 
