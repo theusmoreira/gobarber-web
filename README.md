@@ -14,9 +14,8 @@
 Tabela de conteúdos
 =================
 <!--ts-->
-   * [Tabela de Conteudo](#tabela-de-conteudo)
-   * [Pré Requisitos](#pre-requisitos)
-   * [Tecnologias](#tecnologias)
+   * [Pré Requisitos](#-pré-requisitos)
+   * [Tecnologias](#-tecnologias)
 <!--te-->
 
 
