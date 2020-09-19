@@ -27,7 +27,7 @@ const ForgotPassword: React.FC = () => {
 
   const { addToast } = useToast();
 
-  const hanldeSubmit = useCallback(
+  const handleSubmit = useCallback(
     async (data: ForgotPasswordFormData) => {
       try {
         setLoading(true);
@@ -80,7 +80,7 @@ const ForgotPassword: React.FC = () => {
       <Content>
         <AnimationContainer>
           <img src={logoImg} alt="GoBarber" />
-          <Form ref={formRef} onSubmit={hanldeSubmit}>
+          <Form ref={formRef} onSubmit={handleSubmit}>
             <h1>Recuperar senha</h1>
 
             <Input name="email" icon={FiMail} placeholder="E-mail" />

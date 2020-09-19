@@ -29,7 +29,7 @@ const ResetPassword: React.FC = () => {
 
   const { addToast } = useToast();
 
-  const hanldeSubmit = useCallback(
+  const handleSubmit = useCallback(
     async (data: ResetPasswordFormData) => {
       try {
         formRef.current?.setErrors({});
@@ -68,8 +68,9 @@ const ResetPassword: React.FC = () => {
 
         addToast({
           type: 'error',
-          title: 'Erro ao resetar  senha',
-          description: 'Ocorreu um erro ao resetar sua senha, tente novamente.',
+          title: 'Erro ao redefinir senha',
+          description:
+            'Ocorreu um erro ao redefinir a sua senha, tente novamente.',
         });
       }
     },
@@ -81,8 +82,8 @@ const ResetPassword: React.FC = () => {
       <Content>
         <AnimationContainer>
           <img src={logoImg} alt="GoBarber" />
-          <Form ref={formRef} onSubmit={hanldeSubmit}>
-            <h1>Resetar senha</h1>
+          <Form ref={formRef} onSubmit={handleSubmit}>
+            <h1>Redefinir senha</h1>
 
             <Input
               name="password"

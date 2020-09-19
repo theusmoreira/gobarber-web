@@ -43,14 +43,14 @@ const Dashboard: React.FC = () => {
 
   const [selectedDate, setSelectedDate] = useState(new Date());
   const [currentMonth, setCurrentMonth] = useState(new Date());
-  const [monthAvailability, setMonthAvailabily] = useState<
+  const [monthAvailability, setMonthAvailability] = useState<
     MonthAvailabilityItem[]
   >([]);
 
   const [appointments, setAppointments] = useState<Appointment[]>([]);
 
   const handleDateChange = useCallback((day: Date, modifiers: DayModifiers) => {
-    if (modifiers.available && modifiers.disable) {
+    if (modifiers.available) {
       setSelectedDate(day);
     }
   }, []);
@@ -68,7 +68,7 @@ const Dashboard: React.FC = () => {
         },
       })
       .then(response => {
-        setMonthAvailabily(response.data);
+        setMonthAvailability(response.data);
       });
   }, [currentMonth, user]);
 
@@ -196,7 +196,11 @@ const Dashboard: React.FC = () => {
 
                 <div>
                   <img
-                    src={appointment.user.avatar_url}
+                    src={
+                      appointment.user.avatar_url
+                        ? appointment.user.avatar_url
+                        : 'https://api.adorable.io/avatars/285/abott@adorable.png'
+                    }
                     alt={appointment.user.name}
                   />
                   <strong>{appointment.user.name}</strong>
@@ -219,7 +223,11 @@ const Dashboard: React.FC = () => {
 
                 <div>
                   <img
-                    src={appointment.user.avatar_url}
+                    src={
+                      appointment.user.avatar_url
+                        ? appointment.user.avatar_url
+                        : 'https://api.adorable.io/avatars/285/abott@adorable.png'
+                    }
                     alt={appointment.user.name}
                   />
                   <strong>{appointment.user.name}</strong>
