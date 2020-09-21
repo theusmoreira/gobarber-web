@@ -140,7 +140,14 @@ const Dashboard: React.FC = () => {
         <HeaderContent>
           <img src={logoImg} alt="Logo do GoBarber" />
           <Profile>
-            <img src={user.avatar_url} alt={user.name} />
+            <img
+              src={
+                user.avatar_url !== null
+                  ? user.avatar_url
+                  : 'https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png'
+              }
+              alt={user.name}
+            />
 
             <div>
               <span>Bem-vindo(a),</span>
@@ -199,7 +206,7 @@ const Dashboard: React.FC = () => {
                     src={
                       appointment.user.avatar_url
                         ? appointment.user.avatar_url
-                        : 'https://api.adorable.io/avatars/285/abott@adorable.png'
+                        : 'https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png'
                     }
                     alt={appointment.user.name}
                   />
@@ -226,7 +233,7 @@ const Dashboard: React.FC = () => {
                     src={
                       appointment.user.avatar_url
                         ? appointment.user.avatar_url
-                        : 'https://api.adorable.io/avatars/285/abott@adorable.png'
+                        : 'https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png'
                     }
                     alt={appointment.user.name}
                   />
