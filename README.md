@@ -11,6 +11,9 @@
 	🚧  GoBarber  🚀 Em construção...  🚧
 </h4
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/d7eab760-f185-4b10-b848-f70ac1897ba1/deploy-status)](https://app.netlify.com/sites/trusting-kare-6ac7ce/deploys)
+
+
 Tabela de conteúdos
 =================
 <!--ts-->
@@ -68,4 +71,3 @@ As seguintes ferramentas foram usadas na construção do projeto:
 Feito com ❤️ por Matheus Santos 👋🏽 Entre em contato!
 
  [![Linkedin Badge](https://img.shields.io/badge/-Matheus-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/matheus-santos-moreira)](https://www.linkedin.com/in/matheus-santos-moreira)
-[![Gmail Badge](https://img.shields.io/badge/-contato@matheussantosdev.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:contato@matheussantosdev.com)](mailto:contato@matheussantosdev.com)
