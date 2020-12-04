@@ -21,6 +21,9 @@ import { Container, Content, AnimationContainer, Background } from './styles';
 interface SignUpFormData {
   name: string;
   email: string;
+  type: 'provider';
+  address: string;
+  whatsapp: string;
   password: string;
 }
 
@@ -46,7 +49,7 @@ const SignUp: React.FC = () => {
           abortEarly: false,
         });
 
-        await api.post('/users', data);
+        await api.post<SignUpFormData>('/users', { ...data, type: 'provider' });
 
         addToast({
           type: 'success',
