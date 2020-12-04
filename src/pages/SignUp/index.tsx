@@ -1,5 +1,6 @@
 import React, { useCallback, useRef } from 'react';
-import { FiUser, FiMail, FiLock, FiArrowLeft } from 'react-icons/fi';
+import { FiUser, FiMail, FiLock, FiArrowLeft, FiMapPin } from 'react-icons/fi';
+import { FaWhatsapp } from 'react-icons/fa';
 import { Form } from '@unform/web';
 import { FormHandles } from '@unform/core';
 import * as Yup from 'yup';
@@ -28,7 +29,7 @@ const SignUp: React.FC = () => {
   const { addToast } = useToast();
   const history = useHistory();
 
-  const hanldeSubmit = useCallback(
+  const handleSubmit = useCallback(
     async (data: SignUpFormData) => {
       try {
         formRef.current?.setErrors({});
@@ -78,11 +79,13 @@ const SignUp: React.FC = () => {
       <Content>
         <AnimationContainer>
           <img src={logoImg} alt="GoBarber" />
-          <Form ref={formRef} onSubmit={hanldeSubmit}>
+          <Form ref={formRef} onSubmit={handleSubmit}>
             <h1>Faça seu cadastro</h1>
 
             <Input name="name" icon={FiUser} placeholder="Nome" />
             <Input name="email" icon={FiMail} placeholder="E-mail" />
+            <Input name="address" icon={FiMapPin} placeholder="Endereço" />
+            <Input name="whatsapp" icon={FaWhatsapp} placeholder="Whatsapp" />
             <Input
               name="password"
               icon={FiLock}
