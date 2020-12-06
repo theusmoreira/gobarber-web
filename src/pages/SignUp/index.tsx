@@ -92,7 +92,12 @@ const SignUp: React.FC = () => {
             <Input name="name" icon={FiUser} placeholder="Nome" />
             <Input name="email" icon={FiMail} placeholder="E-mail" />
             <Input name="address" icon={FiMapPin} placeholder="Endereço" />
-            <Input name="whatsapp" icon={FaWhatsapp} placeholder="Whatsapp" />
+            <Input
+              mask="+5599999999999"
+              name="whatsapp"
+              icon={FaWhatsapp}
+              placeholder="Whatsapp"
+            />
             <Input
               name="password"
               icon={FiLock}
