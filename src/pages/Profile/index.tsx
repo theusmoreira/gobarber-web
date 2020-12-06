@@ -1,9 +1,17 @@
 import React, { useCallback, useRef, ChangeEvent } from 'react';
-import { FiUser, FiMail, FiLock, FiCamera, FiArrowLeft } from 'react-icons/fi';
+import {
+  FiUser,
+  FiMail,
+  FiLock,
+  FiCamera,
+  FiArrowLeft,
+  FiMapPin,
+} from 'react-icons/fi';
 import { Form } from '@unform/web';
 import { FormHandles } from '@unform/core';
 import * as Yup from 'yup';
 import { useHistory, Link } from 'react-router-dom';
+import { FaWhatsapp } from 'react-icons/fa';
 import api from '../../services/api';
 
 import { useToast } from '../../hooks/Toast';
@@ -142,6 +150,8 @@ const Profile: React.FC = () => {
           initialData={{
             name: user.name,
             email: user.email,
+            address: user.address,
+            whatsapp: user.whatsapp,
           }}
           onSubmit={handleSubmit}
         >
@@ -164,6 +174,13 @@ const Profile: React.FC = () => {
 
           <Input name="name" icon={FiUser} placeholder="Nome" />
           <Input name="email" icon={FiMail} placeholder="E-mail" />
+          <Input name="address" icon={FiMapPin} placeholder="Endereço" />
+          <Input
+            mask="+55 99 99999-9999"
+            name="whatsapp"
+            icon={FaWhatsapp}
+            placeholder="Whatsapp"
+          />
 
           <Input
             containerStyle={{ marginTop: 24 }}

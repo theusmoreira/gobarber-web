@@ -58,6 +58,10 @@ export const Content = styled.div`
     input[name='old_password'] {
       margin-top: 24px;
     }
+
+    button[type='submit'] {
+      margin-bottom: 16px;
+    }
   }
 `;
 

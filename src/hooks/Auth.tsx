@@ -5,6 +5,8 @@ interface User {
   id: string;
   name: string;
   email: string;
+  address: string;
+  whatsapp: string;
   avatar_url: string;
 }
 
