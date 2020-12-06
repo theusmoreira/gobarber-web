@@ -27,6 +27,8 @@ import { useAuth } from '../../hooks/Auth';
 interface ProfileFormData {
   name: string;
   email: string;
+  address: string;
+  whatsapp: string;
   old_password: string;
   password: string;
   password_confirmation: string;
@@ -48,6 +50,10 @@ const Profile: React.FC = () => {
           email: Yup.string()
             .required('E-mail obrigatório')
             .email('Digite um e-mail válido'),
+          address: Yup.string().required('Endereço obrigatório.'),
+          whatsapp: Yup.string().required(
+            'Número de telefone obrigatório. Ex: +55 99 99999-9999',
+          ),
           old_password: Yup.string(),
           password: Yup.string().when('old_password', {
             is: val => !!val.length,
@@ -70,6 +76,8 @@ const Profile: React.FC = () => {
         const {
           name,
           email,
+          address,
+          whatsapp,
           old_password,
           password,
           password_confirmation,
@@ -78,6 +86,8 @@ const Profile: React.FC = () => {
         const formData = {
           name,
           email,
+          address,
+          whatsapp,
           ...(old_password
             ? {
                 old_password,
