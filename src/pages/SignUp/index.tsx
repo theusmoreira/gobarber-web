@@ -38,11 +38,15 @@ const SignUp: React.FC = () => {
         formRef.current?.setErrors({});
 
         const schema = Yup.object().shape({
-          name: Yup.string().required('Nome obrigatório'),
+          name: Yup.string().required('Nome obrigatório.'),
           email: Yup.string()
-            .required('E-mail obrigatório')
-            .email('Digite um e-mail válido'),
-          password: Yup.string().min(6, 'No mínimo 6 dígitos'),
+            .required('E-mail obrigatório.')
+            .email('Digite um e-mail válido.'),
+          password: Yup.string().min(6, 'No mínimo 6 dígitos.'),
+          address: Yup.string().required('Endereço obrigatório.'),
+          whatsapp: Yup.string().required(
+            'Número de telefone obrigatório. Ex: 11978989844',
+          ),
         });
 
         await schema.validate(data, {
