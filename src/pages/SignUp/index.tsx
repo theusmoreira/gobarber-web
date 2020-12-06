@@ -45,7 +45,7 @@ const SignUp: React.FC = () => {
           password: Yup.string().min(6, 'No mínimo 6 dígitos.'),
           address: Yup.string().required('Endereço obrigatório.'),
           whatsapp: Yup.string().required(
-            'Número de telefone obrigatório. Ex: 11978989844',
+            'Número de telefone obrigatório. Ex: +55 99 99999-9999',
           ),
         });
 
@@ -93,7 +93,7 @@ const SignUp: React.FC = () => {
             <Input name="email" icon={FiMail} placeholder="E-mail" />
             <Input name="address" icon={FiMapPin} placeholder="Endereço" />
             <Input
-              mask="+5599999999999"
+              mask="+55 99 99999-9999"
               name="whatsapp"
               icon={FaWhatsapp}
               placeholder="Whatsapp"
